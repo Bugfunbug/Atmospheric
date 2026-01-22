@@ -14,7 +14,6 @@ out
 *.ipr
 *.iws
 *.iml
-.idea
 
 # gradle
 build
