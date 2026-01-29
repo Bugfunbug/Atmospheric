@@ -18,17 +18,17 @@ license="MIT"
 # A list of mods - how many allowed here is determined by the individual mod loader
 [[mods]] #mandatory
 # The modid of the mod
-modId="atmospheric" #mandatory
+modId="breeze" #mandatory
 # The version number of the mod
 version="1.0.0" #mandatory
 # A display name for the mod
-displayName="Atmospheric" #mandatory
+displayName="Breeze" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification https://docs.minecraftforge.net/en/latest/misc/updatechecker/
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
-logoFile="atmosphere.png" #optional
+#logoFile= "" #optional
 # A text field displayed in the mod UI
 #credits="" #optional
 # A text field displayed in the mod UI
@@ -44,7 +44,7 @@ authors="Bugfunbug" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''Changing up Minecraft's atmosphere.'''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-[[dependencies.atmospheric]] #optional
+[[dependencies.breeze]] #optional
     # the modid of the dependency
     modId="forge" #mandatory
     # Does this dependency have to exist - if not, ordering below must be specified
@@ -58,7 +58,7 @@ description='''Changing up Minecraft's atmosphere.'''
     # Side this dependency is applied on - BOTH, CLIENT, or SERVER
     side="BOTH"
 # Here's another dependency
-[[dependencies.atmospheric]]
+[[dependencies.breeze]]
     modId="minecraft"
     mandatory=true
     # This version range declares a minimum of the current minecraft version up to but not including the next major version
@@ -69,5 +69,5 @@ description='''Changing up Minecraft's atmosphere.'''
 # Features are specific properties of the game environment, that you may want to declare you require. This example declares
 # that your mod requires GL version 3.2 or higher. Other features will be added. They are side aware so declaring this won't
 # stop your mod loading on the server for example.
-[features.atmospheric]
+[features.breeze]
 openGLVersion="[3.2,)"

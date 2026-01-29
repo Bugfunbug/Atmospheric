@@ -1,4 +1,4 @@
-package net.bugfunbug.atmospheric;
+package com.bugfunbug.breeze;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
@@ -14,14 +14,14 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(Atmospheric.MODID)
-public class Atmospheric {
+@Mod(Breeze.MODID)
+public class Breeze {
     // Define mod id in a common place for everything to reference
-    public static final String MODID = "atmospheric";
+    public static final String MODID = "breeze";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public Atmospheric(FMLJavaModLoadingContext context) {
+    public Breeze(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
 
         modEventBus.addListener(this::commonSetup);
